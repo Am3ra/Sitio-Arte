@@ -1,0 +1,8 @@
+.item 
+{
+    transition: .5s ease-in-out;
+}
+.item:hover
+{
+    filter: brightness(80%);
+}

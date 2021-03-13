@@ -14,11 +14,9 @@ const flash = require('connect-flash');
 
 
 
-const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
-
 // Initializations
 const app = express();
-require('./database');
+//require('./database');
 //require('./config/passport');
 
 // Settings
@@ -30,11 +28,10 @@ app.engine('hbs', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
-    extname: 'hbs',
-    handlebars: allowInsecurePrototypeAccess(Handlebars)
+    extname: '.hbs'
 }));
 
-app.set('view engine', 'hbs');
+app.set('view engine', '.hbs');
 
 // Middlewares
 app.use(express.urlencoded({extended: false}));
@@ -48,7 +45,7 @@ app.use(session({
 //app.use(passport.session());
 
 
-app.use(flash());
+//app.use(flash());
 /*
 // Global Variables
 app.use((req, res, next) => {
@@ -60,6 +57,7 @@ app.use((req, res, next) => {
 })
 */
 // Routes
+app.use(require('./routes/index'));
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
