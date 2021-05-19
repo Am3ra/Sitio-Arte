@@ -1,0 +1,269 @@
+.galleria {
+	// width: 100vw;
+	height: 100vh;
+	// background: #000;
+}
+
+/* img{
+    max-width: 20vw;
+    max-height: 10 vh;
+} */
+
+html {	
+	overflow-x: hidden;
+}
+.content {
+	max-width: 807px;
+
+	margin: 20px auto 0;
+	min-height: 90vh;
+}
+
+.nav-link {
+	width: 170px;
+
+	height: 55px;
+
+	// margin: 0 23px 54px 586px;
+
+	padding-top: 13px;
+
+	border-radius: 30px;
+
+	border: solid 1px #686868;
+
+	// align-items: center;
+	// justify-content: center;
+	text-align: center;
+
+	text-transform: uppercase;
+}
+
+.navbar-nav {
+	flex: 1;
+}
+
+footer {
+	// position: absolute;
+	background-color: #ff8181;
+	width: 100%;
+	height: 71px;
+	// margin-left: 0;
+	// position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-top: 5vh;
+}
+// #navbarNavAltMarkup{
+//   // justify-content: center;
+// }
+
+.disclaimer {
+	text-align: right;
+	font-size: 12px;
+}
+
+textarea {
+	width: 100%;
+}
+
+input,
+.form-control,
+.form-select,
+textarea {
+	border-radius: 15px;
+	padding: 10px;
+	border: solid 1px #999999;
+	resize: none;
+}
+
+#ordenarComision {
+	width: 327px;
+	// margin-left: auto;
+	height: 48px;
+
+	// margin: 54px 591px 200px 53px;
+
+	// padding: 15px 64px 15px 65px;
+
+	border-radius: 15px;
+	color: #ffffff;
+	background-color: #ff8181;
+}
+
+.btn-close {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+#botonOrdenar {
+	width: 198px;
+
+	height: 18px;
+
+	//   font-family: Gotham;
+
+	font-size: 16px;
+
+	font-weight: normal;
+
+	font-stretch: normal;
+
+	font-style: normal;
+
+	line-height: 0.75;
+
+	letter-spacing: 1.6px;
+
+	text-align: center;
+
+	color: #ffffff;
+
+	width: 327px;
+
+	height: 48px;
+
+	//   padding: 15px 64px 15px 65px;
+
+	border-radius: 15px;
+
+	background-color: #ff8181;
+}
+
+.btn-pink {
+	display: block;
+	width: 327px;
+
+	height: 48px;
+
+	//   margin: 5vh auto 20vh;
+
+	//   padding: 15px 88px;
+
+	border-radius: 15px;
+
+	background-color: #ff8181;
+	color: white;
+	text-align: center;
+}
+
+.inicia {
+	width: 442px;
+
+	height: 31px;
+
+	//   margin: 66px 749px 60px 729px;
+
+	font-family: Gotham;
+
+	font-size: 28px;
+
+	font-weight: 500;
+
+	font-stretch: normal;
+
+	font-style: normal;
+
+	line-height: 0.43;
+
+	letter-spacing: normal;
+
+	text-align: center;
+
+	color: #ff8181;
+}
+
+.kanban {
+	// position: absolute;
+	display: flex;
+	width: 70%;
+	margin: 0 auto 0;
+	justify-content: space-between;
+	min-height: 90vh;
+}
+
+.kanban-section {
+	width: 365px;
+
+	height: 696px;
+
+	padding: 21px  14px;
+
+	border-radius: 10px;
+
+	background-color: #efefef;
+
+	overflow-y: auto;
+	h2 {
+		font-family: Gotham;
+
+		font-size: 20px;
+
+		font-weight: 700;
+
+		font-stretch: normal;
+
+		font-style: normal;
+
+		line-height: 0.6;
+
+		letter-spacing: normal;
+
+		text-align: left;
+
+		color: #686868;
+	}
+}
+
+.activas {
+	max-width: 807px;
+	margin: 20px auto 0;
+}
+
+.kanban-item{
+  width: 90%;
+
+  height: 65px;
+
+  margin: 18px auto;
+
+  padding: 14px 12px 13px;
+
+  border-radius: 5px;
+
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.16);
+
+  background-color: #ffffff;
+
+}
+
+.kanban-item .status{
+	height: 9px;
+	border-radius: 3px;
+	
+}
+
+.admin-container{
+	display: flex;
+	min-height: 10vh;
+	// justify-content:;
+}
+
+.admin-menu{
+	min-width: 20%;
+	background-color: rgb(95, 95, 95);
+}
+
+.admin-main>.kanban{
+	// min-width: 120vw;
+	overflow-x: scroll;
+	margin: 0 0 0 !important;
+	width: 80vw;
+}
+
+
+.admin-main .kanban-section{
+	min-width: 25vw;
+	margin: 0 5vw;
+}

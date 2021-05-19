@@ -1,0 +1,59 @@
+// Quasar Sass (& SCSS) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary   : #ff8181
+$secondary : #26A69A
+$accent    : #9C27B0
+
+$dark      : #080808
+$gray	   : #686868
+
+$positive  : #21BA45
+$negative  : #C10015
+$info      : #31CCEC
+$warning   : #F2C037
+
+
+$salmon-pink: #ff8181
+$rose-pink : #ffb2b2
+$light-gray: #999999
+$red-lips  : #e35851
+
+/* ------- FONTS ------- */
+
+@font-face
+	font-family: Gotham
+	src: url('~assets/fonts/Gotham Book Regular.otf') format('opentype')
+	font-weight: normal
+
+@font-face
+	font-family: Gotham
+	src: url('~assets/fonts/Gotham Medium Regular.ttf') format('truetype')
+	font-weight: bold
+
+/* ------ SIZING ------- */
+
+$content-width: 50% 
+
+@mixin content-width
+	margin: 0 12px
+	@media(min-width: $breakpoint-md-min)
+		width: $content-width
+		margin: 0 auto
+
+@mixin font($font-size, $font-weight, $font-color)
+	font-size: $font-size
+	font-weight: $font-weight
+	line-height: 1.1
+	color: $font-color

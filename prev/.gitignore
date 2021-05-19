@@ -1,0 +1,11 @@
+uploads/
+
+node_modules/
+
+package-lock.json
+
+scr/.DS_Store
+
+scr/routes/.DS_Store
+
+.DS_Store

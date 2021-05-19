@@ -1,16 +1,17 @@
 {
-  "name": "Sitio-Arte",
+  "name": "sitio-arte",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Proyecto laboratorio Web",
+  "main": "Server.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js && ./app/ quasar dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Am3ra/Sitio-Arte.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,16 +19,23 @@
   },
   "homepage": "https://github.com/Am3ra/Sitio-Arte#readme",
   "dependencies": {
-    "@handlebars/allow-prototype-access": "^1.0.3",
-    "connect-flash": "^0.1.1",
+
+    "aws-sdk": "^2.893.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.11.19",
-    "nodemon": "^2.0.7",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "path": "^0.12.7"
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

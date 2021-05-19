@@ -1,0 +1,44 @@
+// app global css in Sass form
+
+body
+	font-family: Gotham
+
+p
+	@include font(16px, normal, $gray)
+	@media (min-width: $breakpoint-md-min)
+		font-size: 18px
+
+ul > li
+	@include font(16px, normal, $gray)
+	margin-bottom: 0.8rem
+	@media (min-width: $breakpoint-md-min)
+		font-size: 18px
+
+.text-light-gray
+	color: $light-gray !important
+
+.bg-light-gray
+	background-color: $light-gray !important
+
+.text-gray
+	color: $gray !important
+
+.bg-gray
+	background-color: $gray !important
+
+.text-red-lips
+	color: $red-lips !important
+
+.bg-red-lips
+	background-color: $red-lips !important
+
+.SectionTitle 
+	@include font(21px, bold, $salmon-pink)
+	margin: 0 0 20px
+	@media (min-width: $breakpoint-md-min)
+		font-size: 28px
+
+.Form__field
+	margin-bottom: 20px
+	.q-field__control
+		border-radius: 10px
